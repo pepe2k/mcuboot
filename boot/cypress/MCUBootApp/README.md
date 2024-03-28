@@ -167,19 +167,17 @@ Example command:
 
         make app APP_NAME=MCUBootApp PLATFORM=PSOC_062_2M BUILDCFG=Debug MCUBOOT_IMAGE_NUMBER=1 ENC_IMG=1
 
-**KNOWN ISSUE:** On **CYW20829** platform MCUBootApp compiled in `BUILDCFG=Release` mode and with enabled encryption `ENC_IMG=1` and hardware rollback support does not start valid next application `BlinkyApp`. This would be fixed in next releases.
-
 **Programming solution**
 
 There are couple ways of programming hex of MCUBootApp and BlinkyApp. Following instructions assume one of Cypress development kits, for example `CY8CPROTO_062_4343W`.
 
 1. Direct usage of OpenOCD.
-OpenOCD package is supplied with ModuToolbox IDE and can be found in installation folder under `./tools_2.1/openocd`.
+OpenOCD package is supplied with ModuToolbox IDE and can be found in installation folder under `./tools_3.2/openocd`.
 Open terminal application -  and execute following command after substitution `PATH_TO_APPLICATION.hex` and `OPENOCD` paths.
 
 Connect a board to your computer. Switch Kitprog3 to DAP-BULK mode by pressing `SW3 MODE` button until `LED2 STATUS` constantly shines.
 
-        export OPENOCD=/Applications/ModusToolbox/tools_2.1/openocd 
+        export OPENOCD=/Applications/ModusToolbox/tools_3.2/openocd 
 
         ${OPENOCD}/bin/openocd -s ${OPENOCD}/scripts \
                             -f ${OPENOCD}/scripts/interface/kitprog3.cfg \

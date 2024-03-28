@@ -70,9 +70,9 @@ The default installation folder is expected by the makefile build system.
 
 To use another installation folder, version of **ModusToolbox™ IDE** or another GCC Compiler, specify the path to a toolchain using the **TOOLCHAIN_PATH** parameter.
 
-Below is an example on how to set toolchin path to the latest include with **ModusToolbox™ IDE 3.0**:
+Below is an example on how to set toolchain path to the latest include with **ModusToolbox™ IDE 3.2**:
 
-    make clean app APP_NAME=MCUBootApp PLATFORM=PSOC_062_2M BUILDCFG=Debug FLASH_MAP=platforms/memory/PSOC6/flashmap/psoc6_swap_single.json TOOLCHAIN_PATH=c:/Users/${USERNAME}/ModusToolbox/tools_3.0/gcc
+    make clean app APP_NAME=MCUBootApp PLATFORM=PSOC_062_2M BUILDCFG=Debug FLASH_MAP=platforms/memory/PSOC6/flashmap/psoc6_swap_single.json TOOLCHAIN_PATH=c:/Users/${USERNAME}/ModusToolbox/tools_3.2/gcc
 
 ### Build environment troubleshooting
 
